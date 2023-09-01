@@ -5,8 +5,8 @@
     <string name="txv_TituloListado">Listado de Superhéroes</string>
     <string name="texto_placeholder">PlaceHolder</string>
     <string name="img_FotoSuperheroe_description">Foto del Superheroe</string>
-    <string name="txv_Traducido">Historia traducida</string>
-    <string name="txv_NoTraducido">Traduccion no disponible</string>
+    <string name="txv_Traducido">Cuenta con traducción al español</string>
+    <string name="txv_NoTraducido">Sin traducción</string>
     <string name="flb_DetalleVolver">Volver</string>
     <string name="flb_DetalleCorreo">Elegir personaje por correo</string>
     <string name="correoAsunto">Votación %s</string>
