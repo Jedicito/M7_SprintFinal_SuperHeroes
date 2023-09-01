@@ -5,6 +5,7 @@
     android:id="@+id/constraintLayoutListado"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primario_oscuro"
     tools:context=".presentacion.vistas.ListadoSuperheroesFragment">
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/txv_TituloListado"
+        android:textColor="@color/texto_primario"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

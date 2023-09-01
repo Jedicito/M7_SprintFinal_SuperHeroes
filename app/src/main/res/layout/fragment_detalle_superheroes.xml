@@ -5,6 +5,7 @@
     android:id="@+id/constraintLayout_Detalle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primario"
     tools:context=".presentacion.vistas.DetalleSuperheroesFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -19,6 +20,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/primario"
             android:padding="10dp"
             tools:layout_editor_absoluteY="1dp">
 
@@ -28,6 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/hello_blank_fragment"
+                android:textColor="@color/texto_primario"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -49,6 +52,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/texto_placeholder"
+                android:textColor="@color/texto_primario"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/img_DetalleFoto" />
 
@@ -58,6 +63,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/texto_placeholder"
+                android:textColor="@color/texto_primario"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txv_DetalleOrigen" />
 
@@ -67,6 +74,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/texto_placeholder"
+                android:textColor="@color/texto_primario"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txv_DetalleCreacion" />
 
@@ -76,6 +85,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/texto_placeholder"
+                android:textColor="@color/texto_primario"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txv_DetallePoderes" />
 
@@ -85,6 +96,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/texto_placeholder"
+                android:textColor="@color/texto_primario"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txv_DetalleColor" />
 
@@ -101,6 +114,7 @@
         android:contentDescription="@string/flb_DetalleVolver"
         android:rotation="90"
         android:src="@android:drawable/arrow_down_float"
+        app:backgroundTint="@color/acentuado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -113,6 +127,7 @@
         android:clickable="true"
         android:contentDescription="@string/flb_DetalleCorreo"
         android:src="@android:drawable/sym_action_email"
+        app:backgroundTint="@color/acentuado"
         app:ensureMinTouchTargetSize="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
