@@ -13,4 +13,11 @@ interface SuperheroesDao {
 
     @Query("Select * from tbl_superheroes")
     fun selectSuperheroes(): LiveData<List<SuperheroesListadoEntity>>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertSuperheroeDetalle(superheroesDetalleEntity: SuperheroesDetalleEntity)
+
+    @Query("Select * from tbl_superheroe_detalle where id = :id")
+    fun selectSuperheroeDetalle(id: Int): LiveData<SuperheroesDetalleEntity>
+
 }

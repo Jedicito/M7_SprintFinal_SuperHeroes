@@ -9,5 +9,18 @@
         android:id="@+id/listadoSuperheroesFragment"
         android:name="chl.ancud.m7_sprintfinal_superheroes.presentacion.vistas.ListadoSuperheroesFragment"
         android:label="fragment_listado_superheroes"
-        tools:layout="@layout/fragment_listado_superheroes" />
+        tools:layout="@layout/fragment_listado_superheroes" >
+        <action
+            android:id="@+id/action_listadoSuperheroesFragment_to_detalleSuperheroesFragment"
+            app:destination="@id/detalleSuperheroesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleSuperheroesFragment"
+        android:name="chl.ancud.m7_sprintfinal_superheroes.presentacion.vistas.DetalleSuperheroesFragment"
+        android:label="fragment_detalle_superheroes"
+        tools:layout="@layout/fragment_detalle_superheroes" >
+        <action
+            android:id="@+id/action_detalleSuperheroesFragment_to_listadoSuperheroesFragment"
+            app:destination="@id/listadoSuperheroesFragment" />
+    </fragment>
 </navigation>

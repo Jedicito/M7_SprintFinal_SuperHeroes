@@ -23,4 +23,10 @@ class SuperheroesViewModel(application: Application): AndroidViewModel(applicati
 
     fun superheroesLiveData() = repo.obtenerSuperheroesLiveData()
 
+    fun getSuperheroesDetalle(id: Int) = viewModelScope.launch {
+        repo.getSuperheroesDetalle(id)
+    }
+
+    fun superheroesDetalleLiveData(id: Int) = repo.obtenerSuperheroesDetalleLiveData(id)
+
 }

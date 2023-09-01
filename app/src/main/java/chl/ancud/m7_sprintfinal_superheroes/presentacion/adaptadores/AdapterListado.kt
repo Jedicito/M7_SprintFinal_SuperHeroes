@@ -1,8 +1,11 @@
 package chl.ancud.m7_sprintfinal_superheroes.presentacion.adaptadores
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
+import chl.ancud.m7_sprintfinal_superheroes.R
 import chl.ancud.m7_sprintfinal_superheroes.data.local.SuperheroesListadoEntity
 import chl.ancud.m7_sprintfinal_superheroes.databinding.ItemListadoSuperheroesBinding
 import coil.load
@@ -45,6 +48,11 @@ class AdapterListado: RecyclerView.Adapter<AdapterListado.ItemListadoViewHolder>
             binding.txvCreacion.text = superHeroes.creacion.toString()
             binding.imgFotoSuperheroe.load(superHeroes.imagenLink)
 
+            binding.cardViewItemListado.setOnClickListener {
+                val bundle = Bundle()
+                bundle.putInt("id", superHeroes.id)
+                Navigation.findNavController(binding.root).navigate(R.id.action_listadoSuperheroesFragment_to_detalleSuperheroesFragment, bundle)
+            }
         }
     }
 

@@ -3,14 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:minWidth="160dp"
+    android:minHeight="300dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView_ItemListado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardElevation="10dp"
-        app:contentPadding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,8 +23,8 @@
 
             <ImageView
                 android:id="@+id/img_FotoSuperheroe"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:contentDescription="@string/img_FotoSuperheroe_description"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
