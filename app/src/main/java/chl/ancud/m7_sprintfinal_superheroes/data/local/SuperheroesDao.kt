@@ -12,5 +12,5 @@ interface SuperheroesDao {
     suspend fun insertSuperheroes(superheroesListadoEntity: List<SuperheroesListadoEntity>)
 
     @Query("Select * from tbl_superheroes")
-    fun getSuperheroes(): LiveData<List<SuperheroesListadoEntity>>
+    fun selectSuperheroes(): LiveData<List<SuperheroesListadoEntity>>
 }
